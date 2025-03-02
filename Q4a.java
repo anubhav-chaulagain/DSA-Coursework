@@ -1,26 +1,33 @@
+/*
+Problem: Count and display the top 3 hashtags from a list of tweets, sorted by their mention count in descending order.
 
-// Problem: Count and display the top 3 hashtags from a list of tweets, sorted by their mention count in descending order.
+Approach:
 
-// Approach:
+Use a list of maps to store tweet data (user_id, tweet_id, tweet, tweet_date).
 
-// Use a list of maps to store tweet data (user_id, tweet_id, tweet, tweet_date).
+Extract hashtags from the tweet text and count their occurrences using a HashMap.
 
-// Extract hashtags from the tweet text and count their occurrences using a HashMap.
+Sort the hashtags by count in descending order, and alphabetically if counts are equal.
 
-// Sort the hashtags by count in descending order, and alphabetically if counts are equal.
+Display the top 3 hashtags in a formatted table.
 
-// Display the top 3 hashtags in a formatted table.
+Key Steps:
 
-// Key Steps:
+Extract Hashtags: Split the tweet text and identify words starting with #.
 
-// Extract Hashtags: Split the tweet text and identify words starting with #.
+Count Hashtags: Use a HashMap to store and count hashtag occurrences.
 
-// Count Hashtags: Use a HashMap to store and count hashtag occurrences.
+Sort Hashtags: Sort by count (descending) and then by hashtag name (ascending).
 
-// Sort Hashtags: Sort by count (descending) and then by hashtag name (ascending).
+Display Results: Print the top 3 hashtags in a table format
+ */
 
-// Display Results: Print the top 3 hashtags in a table format
+/*
+Complexity:
+Time: O(n * m), where n is the number of tweets and m is the average number of words per tweet.
 
+Space: O(k), where k is the number of unique hashtags.
+ */
 import java.util.*;
 
 public class Q4a {
