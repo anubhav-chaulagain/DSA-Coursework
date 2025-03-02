@@ -106,10 +106,33 @@ public class Q1b {
         Q1b q1b = new Q1b(); // Create an instance of the Q1b class
 
         // Test Case 1
-        
+
         System.out.println(q1b.kthSmallestProduct(new int[]{2, 5}, new int[]{3, 4}, 2)); // Expected output: 8
         
         // Test Case 2
         System.out.println(q1b.kthSmallestProduct(new int[]{-4, -2, 0, 3}, new int[]{2, 4}, 6)); // Expected output: 0
     }
 }
+
+/*
+Input: returns1 = [2,5], returns2 = [3,4], k = 2
+Output: 8
+Explanation: The 2 smallest investments are:
+
+returns1[0] * returns2[0] = 2 * 3 = 6
+returns1[0] * returns2[1] = 2 * 4 = 8
+The 2nd smallest investment is 8.
+
+----------------------------------------------------------
+Input: returns1 = [-4, -2, 0, 3], returns2 = [2, 4], k = 6
+Output: 0
+Explanation: The 6 smallest investments are:
+
+returns1[0] * returns2[1] = -4 * 4 = -16
+returns1[0] * returns2[0] = -4 * 2 = -8
+returns1[1] * returns2[1] = -2 * 4 = -8
+returns1[1] * returns2[0] = -2 * 2 = -4
+returns1[2] * returns2[0] = 0 * 2 = 0
+returns1[2] * returns2[1] = 0 * 4 = 0
+The 6th smallest investment is 0.
+ */
